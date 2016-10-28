@@ -84,13 +84,14 @@ header {
 
 .block1 {
 	position: relative;
-	height: 660px;
+	height: 740px;
 	width: 1000px;
 	margin-bottom: 40px;
 	overflow: hidden;
 }
 
 .block2 {
+	margin-top: -90px;
 	position: relative;
 	height: 765px;
 	width: 1000px;
@@ -209,7 +210,7 @@ header {
 
 .order-position-bottom-left {
 	position: absolute;
-	bottom: 40px;
+	top: 475px;
 	left: 33px;
 }
 
@@ -217,6 +218,19 @@ header {
 	position: absolute;
 	top: -15px;
 	right: 15px;
+}
+
+.order-click {
+	z-index: 3;
+	position: absolute;
+	vertical-align: middle;
+	text-align: center;
+	width: 220px;
+	height: 245px;
+	background: #f9e7ee;
+	font-size: 13px;
+	padding-top: 13px;
+	border: 1px solid #efdde4;
 }
 
 .order {
@@ -230,14 +244,16 @@ header {
 	padding-top: 13px;
 }
 
-.order p {
+.order p,
+.order-click p {
 	font-size: 38px;
 	font-family: Times;
 	padding-bottom: 10px;
 	margin: 0;
 }
 
-.order .name {
+.order .name,
+.order-click .name  {
 	margin-bottom: 3px;
 }
 
@@ -305,7 +321,9 @@ header {
  	font-size: 11px;
  }
 
- .icon a {
+ .flower-from-shanti a {
+ 	text-decoration: none;
+	border-bottom: 1px solid #bfacb2;
  	color: #000000;
  }
 
@@ -367,7 +385,7 @@ footer {
 	width: 970px;
 	border-top: 1px solid rgb(0, 0, 0);
 	top: 0px;
-	left: 30px;
+	left: 15px;
 	opacity: 0.3;
  }
 
@@ -383,12 +401,8 @@ footer {
  	margin-left: 40px;
  	line-height: 20px;
  	font-size: 15px;
+ 	width: 190px;
  }
-
-.inform .inf-4 .filling {
-	width: 200px;
-	word-wrap: break-word;
-}
 
  .basement {
   	position: relative;
