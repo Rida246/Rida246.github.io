@@ -28,7 +28,6 @@ header {
  	min-width: 140px;
  	height: 200px;
  	float: left;
-	/*float автоматически задаёт display: block, поэтому не имеет смысла задавать display: inline-block */
  }
 
 .head .about-flowers a {
@@ -44,7 +43,6 @@ header {
 	text-align: center;
 	vertical-align: middle;
 	margin-top: 10px;
-	/*vertical-align для display: block ничего не делает, можно задавать inline, inline-block, table-cell, flex...*/
 }
 
 .head .logo .stick {
@@ -61,8 +59,6 @@ header {
 	height: 25px;
 	width: 340px;
 	border-radius: 3px;
-	border: none;
-	/*Лишнее обнуление бордера*/
 	box-shadow: 0px 1px 1px 0px #e3c7d1;
 	margin: 35px auto 5px;
 	padding-top: 7px;
@@ -236,8 +232,6 @@ header {
 	padding-top: 13px;
 	border: 1px solid #efdde4;
 	display: none;
-
-	/*Старайся не оставлять лишних пустых строк*/
 }
 
 .click {
