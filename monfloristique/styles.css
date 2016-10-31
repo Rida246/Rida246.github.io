@@ -1,10 +1,9 @@
 body {
-	background: url('img/fon.png') repeat; /*На боди не стоит вешать фоновые картинки, */
+	background: url('img/fon.png') repeat;
 	background-size: auto 100%;
 	font-family: Arial;
 	margin: 0;
 	padding: 0;
-	/*Желательно прописывать font-family и font-size для боди*/
 }
 .wraper {
 	top: 0;
@@ -34,7 +33,6 @@ header {
 	text-decoration: none;
 	border-bottom: 1px solid #bfacb2;
 	color: #000000;
-	/*Желательно чтобы иерахия классов и тегов была как можно короче, ну и классы желательно не вешать на теги*/
 }
 
 .head .logo {
@@ -107,7 +105,6 @@ header {
 	position: relative;
 	width: 940px;
 	z-index: -1;
-	/*Старайся избедать отрицательных z-index, может некорректно работать в разных*/
 	padding: 0px 30px;
 	margin-bottom: 8px;
 }
@@ -164,12 +161,12 @@ header {
 
 .ph-3 {
 	padding-left: 20px;
-
+	
 }
 
 .ph-32 {
 	padding-right: 0px;
-
+	
 }
 
 
@@ -486,3 +483,11 @@ span.time {
 .designer .filling {
 	font-size: 12px;
 }
+
+
+
+
+
+
+
+
