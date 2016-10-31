@@ -15,8 +15,10 @@
 	</div>
 		<div class="head cehter">
 			<div class="logo">
+				<!--Не забывай вложенность отступами отбивать что бы код был более читаем -->
 			<div class="stick">Букеты из импортных цветов в Уфе</div>
 			<img src="img/logo.png" id="logo">
+			<!-- у img должен быть атрибут alt, без него код считается невалидным -->
 			<div class="decoration">
 				<span>Дарите цветы не только на 8 марта</span>
 			</div>
@@ -40,16 +42,19 @@
 					Коробочка
 				</div>
 				<p>1 000 руб.</p>
-				<input type="tel" name="tel" placeholder="Номер телефона">
-				<input type="text" name="fulname" placeholder="Ваше имя">
-				<input type="button" value="Оформить заказ" class="btn">
+				<form action="">
+					<input type="tel" class="tel" name="tel" placeholder="Номер телефона" >
+				<input type="text" class="fulname" name="fulname" placeholder="Ваше имя">
+				<!-- Инпуты всегда в форме, у кнопки отправки формы должен быть type="submit" -->
+				<button class="btn" type="submit">Оформить заказ</button>
+				</form>
 			</div>
 			<div class="order">
 				<div class="name">
 					Коробочка
 				</div>
 				<p>1 000 руб.</p>
-				<input type="button" value="Заказать" class="btn">
+				<button class="btn" >Заказать</button>
 			</div>
 		</div>
 		<div class="description">
@@ -63,7 +68,7 @@
 				</div>
 				</div>
 			<div class="column column4 icon">
-				<div class="filling">	
+				<div class="filling">
 			<img src="img/icon.png" id="icon-shanti">
 				<div class="flower-from-shanti">
 					<a href="#">Цветы от Шанти</a>
@@ -79,16 +84,18 @@
 					Букет-комплимент
 				</div>
 				<p>1 000 руб.</p>
-				<input type="tel" name="tel" placeholder="Номер телефона">
-				<input type="text" name="fulname" placeholder="Ваше имя">
-				<input type="button" value="Оформить заказ" class="btn">
+				<form action="">
+					<input type="tel" class="tel" name="tel" placeholder="Номер телефона">
+				<input type="text" class="fulname" name="fulname" placeholder="Ваше имя">
+				<button class="btn" type="submit">Оформить заказ</button>
+				</form>
 			</div>
 			<div class="order">
 				<div class="name">
 					Букет-комплимент
 				</div>
 				<p>1 000 руб.</p>
-				<input type="button" value="Заказать" class="btn">
+				<button class="btn">Заказать</button>
 			</div>
 		</div>
 		<div class="ph-2">
@@ -101,7 +108,7 @@
 					<div class="flower-from-shanti">
 						<a href="#">Цветы от Шанти</a>
 					</div>
-			</div> 
+			</div>
 		</div>
 			<div class="column column2">
 				<div class="filling">
@@ -109,7 +116,7 @@
 				<p>7 голландских роз <span class="red">красного</span>, <span class="pink1">розового</span> или <span class="yellow">жёлтого</span> цвета, завернутых в крафт-бумагу</p>
 			</div>
 			</div>
-		</div>		
+		</div>
 	</div>
 	<div class="block3">
 		<div class="half half-1">
@@ -168,7 +175,7 @@
 			<div class="filling">
 			<div class="phone">
 		 		+7 965 <span>947-35-12</span>
-		 	</div> 
+		 	</div>
 			<span class="time">c 10 до 18:00</span>
 			</div>
 		</div>
@@ -181,5 +188,16 @@
 	</div>
 </footer>
 </div>
+<script type="text/javascript">
+	var formBtn = document.getElementsByClassName('btn'),
+	 		orderClsnm = '.order',
+			clickClsnm = 'click';
+
+	for (var i = 0; i < formBtn.length; i++) {
+		formBtn[i].onclick = function(e) {
+			this.closest(orderClsnm).previousElementSibling.classList.add(clickClsnm)
+		}
+	}
+</script>
 </body>
 </html>
