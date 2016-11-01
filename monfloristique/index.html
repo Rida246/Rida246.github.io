@@ -36,6 +36,10 @@
 		</div>
 		<div class="order-position-bottom-left">
 			<div class="order-click">
+				<button class="returner" type="submit">
+					<img src="img/returner.png" alt="returner">
+				</button>
+
 				<div class="name">
 					Коробочка
 				</div>
@@ -77,6 +81,9 @@
 	<div class="block2">
 		<div class="order-position-top-right">
 			<div class="order-click">
+				<button class="returner" type="submit">
+					<img src="img/returner.png" alt="returner">
+				</button>
 				<div class="name">
 					Букет-комплимент
 				</div>
@@ -188,6 +195,7 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script type="text/javascript">
 	var formBtn = document.getElementsByClassName('btn'),
+	returnerBtn = document.getElementsByClassName('returner'),
 	 		orderClsnm = '.order',
 			clickClsnm = 'click';
 
@@ -196,6 +204,12 @@
 			this.closest(orderClsnm).previousElementSibling.classList.add(clickClsnm)
 		}
 	}
+
+	for (var i = 0; i < returnerBtn.length; i++) {
+        returnerBtn[i].onclick = function(e) {
+   			this.closest('.order-click').classList.remove(clickClsnm)
+        }
+    }
 </script>
 
 </body>
