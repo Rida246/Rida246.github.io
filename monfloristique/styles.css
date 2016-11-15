@@ -233,6 +233,7 @@ header {
 
 .click {
 	display: block;
+	transition: all 10s;
 }
 
 .returner {
@@ -260,6 +261,7 @@ header {
 	height: 130px;
 	background: #ffffff;
 	font-size: 13px;
+	border: 1px solid #ffffff;
 	padding-top: 13px;
 }
 
@@ -375,7 +377,7 @@ header {
  	font-size: 11px;
  }
 
- .flower-from-shanti a {
+ .flower-from-shanti span {
  	text-decoration: none;
 	border-bottom: 1px solid #bfacb2;
  	color: #000000;
@@ -472,6 +474,7 @@ footer {
 .contact,
 .nothing,
 .designer {
+	font-family: Times;
  	display: inline-block;
  	margin: 0;
  	width: 250px;
@@ -480,25 +483,22 @@ footer {
 }
 
 .year {
-	font-family: Times;
 	font-size: 15px;
 }
 
-.contact {
-	font-family: Times;
-	text-align: center;
-}
+
 .contact .filling {
 	width: 160px;
 	margin-left: 32px;
 }
 
 span.time {
+	padding-left: 50px;
 	font-size: 15px;
 }
 
 .designer .filling {
-	font-size: 12px;
+	font-size: 15px;
 }
 
 
