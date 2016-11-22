@@ -1,0 +1,173 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	margin-left: 40px;
+}
+
+.main {
+	font-size: 15px;
+}
+
+.aside {
+	display: inline-block;
+	margin-left: 40px;
+	width: 18%;
+	max-width: 190px;
+}
+
+.aside p,
+.aside h4,
+.request p {
+	margin: 0;
+}
+
+.form{
+	position:relative;
+	display: inline-block;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+	margin-bottom: 150px;
+	padding-left: 20px;
+	padding-right: 150px;
+	padding-top: 30px;
+	width: 530px;
+	height: 820px;
+	background-image: linear-gradient(to bottom, #e8cecd 0px, #ecd2d1 15px, #ffdbdb 80px, #fee9e8 330px, #fee9e8 670px, #d8cbd8 670px, #a6b1cd 850px);
+
+}
+
+.form::after,
+.form::before {
+	content: '';
+	position: absolute;
+	background-image: url('img/shadow.png');
+	width: 27px;
+	height: 410px;
+	top: 30px;
+	right: -27px;
+}
+
+.form::after {
+	-webkit-transform: scale(-1, 1);
+	left: -27px;
+}
+
+input.textarea {
+	width: 330px;
+	height: 20px;
+}
+
+.item {
+	margin: auto 0;
+}
+
+.change {
+	margin-left: 170px;
+}
+
+.questionnaire{
+	height: 640px;
+}
+
+.request {
+	position: relative;
+	width: 340px;
+	padding: 10px 0px 20px 10px;
+	margin-left: 160px;
+	height: 35px;
+	background-color: #ffdddd;
+	margin-bottom: 20px;
+}
+
+.hidden-shadow {
+	position: absolute;
+	width: 350px;
+	height: 20px;
+	bottom: 0px;
+	left: 0px;
+	background-color: #ffdddd;
+	z-index: 100;
+}
+
+.request::after {
+	content:'';
+	position: absolute;
+	left: 5px;
+	bottom: 4px;
+	box-shadow: 0px 3px 7px #000;
+	height: 10px;
+	width: 340px;
+	border-radius: 50%;
+}
+
+.form-group {
+	width: 530px;
+	height: 45px;
+}
+
+.form-group:first-child {
+	height: 60px;
+}
+
+.item {
+	display: inline-block;
+	width: 170px;
+	float: left;
+}
+
+.ield-to-fill {
+	display: inline-block;
+	width: 350px;
+}
+
+.caption-of-contact-information {
+	margin-left: 170px;
+	margin-bottom: 10px;
+}
+
+.caption-of-contact-information h2 {
+	margin: 0px;
+}
+
+.agreement-dispatch {
+	height: 160px;
+	margin-left: 170px;
+	width: 360px;
+}
+
+.agreement {
+	margin-top: 30px;
+	width: 380px;
+	height: 60px;
+}
+
+.agreement-text {
+	display: inline-block;
+	width: 360px;
+	height: 35px;
+	padding-top: 2px;
+}
+
+.checkbox-position {
+	display: inline-block;
+	float: left;
+	width: 18px;
+}
+
+.btn {
+	background: url('img/btn.png') no-repeat -1px -13px;
+	height: 55px;
+	width: 278px;
+	padding: 0px;
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 20px;
+	color: #a1a1a7;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+
