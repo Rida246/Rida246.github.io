@@ -23,6 +23,7 @@
 	height: 300px;
 	border-radius: 10px;
 	word-wrap: break-word;
+	letter-spacing: -20px;
 	overflow: hidden;
 	transition-property: all;
 	transition-duration: 0.7s;
