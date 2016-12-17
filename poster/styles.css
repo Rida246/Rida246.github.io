@@ -57,7 +57,7 @@ span.head {
 .more-than-office {
 	width: 500px;
 	font-size: 24px;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 33px;
 }
 
@@ -68,6 +68,7 @@ span.head {
 
 .responsible {
 	width: 260px;
+	position: relative;
 }
 
 .responsible .email-1 {
@@ -78,19 +79,23 @@ span.head {
 .responsible .email-2 {
 	line-height: 23px;
 	color: #003cff;
-	font-weight: 300;
+	font-weight: 400;
 	
 }
 
 .responsible .sign {
-	margin-right: 15px;
+	position: absolute;
+	top: 0;
+	left: 35px;
+	width: 165px;
 	font-size: 17px;
 	line-height: 23px;
 }
 
 .responsible img {
-	width: 80px;
-	height: 80px;
+	margin-left: 175px;
+	width: 85px;
+	height: 85px;
 }
 
 .fatty-h {
@@ -116,9 +121,10 @@ span.head {
 }
 
 .details {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 17px;
 	line-height: 23px;
+	margin-bottom: 30px;
 }
 
 .column {
@@ -128,7 +134,6 @@ span.head {
 }
 
 .column p:nth-child(2) {
-	-webkit-margin-before: 0.5em;
 	-webkit-margin-after: 0.5em;
 }
 
@@ -155,9 +160,9 @@ span.head {
 	transform: rotate(-90deg);
 	right: -85px;
 	bottom: 155px;
-	font-size: 20px;
-	font-weight: 300;
-	line-height: 29px;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 23px;
 	z-index: 100;
 }
 
