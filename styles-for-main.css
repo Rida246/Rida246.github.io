@@ -30,7 +30,7 @@
 }
 
 .filling:hover {
-	box-shadow: 0px 0px 2px 2px #a6a6a6;
+	box-shadow: 0px 0px 0px 5px #a6a6a6;
 	transition-property: all;
 	transition-duration: 0.1s;
 }
@@ -54,4 +54,9 @@ span.name {
 
 .form {
 	background-image: linear-gradient(to bottom, #e8cecd 0px, #ecd2d1 15px, #ffdbdb 80px, #fee9e8 300px);
+}
+
+.poster {
+	background: url('img/lettering.png') -20px -20px;
+	background-size: 25%;
 }
